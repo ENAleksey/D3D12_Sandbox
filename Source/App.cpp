@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "resource.h"
+#include "../resource.h"
 #include "App.h"
 
 HWND App::m_hwnd = nullptr;
