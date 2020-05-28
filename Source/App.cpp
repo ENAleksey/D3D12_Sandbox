@@ -12,7 +12,7 @@ int App::Run(Engine* pEngine, HINSTANCE hInstance, int nCmdShow)
     windowClass.lpfnWndProc = WindowProc;
     windowClass.hInstance = hInstance;
     windowClass.hCursor = LoadCursor(NULL, IDC_ARROW);
-    windowClass.lpszClassName = L"Test";
+    windowClass.lpszClassName = L"Sandbox";
     windowClass.hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_ICON1));
     RegisterClassEx(&windowClass);
 
@@ -21,7 +21,7 @@ int App::Run(Engine* pEngine, HINSTANCE hInstance, int nCmdShow)
 
     m_hwnd = CreateWindow(
         windowClass.lpszClassName,
-        L"Test",
+        L"Sandbox",
         WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT,
         CW_USEDEFAULT,
